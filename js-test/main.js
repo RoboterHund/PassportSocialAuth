@@ -70,18 +70,21 @@ function getExpressSession () {
 // get passport configuration
 function getPassportConfig (passportAuth) {
 	var authParams = require ('./private/auth');
-	var routesMap = require ('./routes/map');
+
 	var url = require ('url');
 	var host = getHost ();
+
+	var routesMap = require ('./routes/map');
+	var facebookRoutes = routesMap.auth.facebook;
 
 	return new passportAuth.startConfig ()
 
 			.provider (passportAuth.strategies.facebook)
 			.apiToken (authParams.facebook.token)
 			.secret (authParams.facebook.secret)
-			.loginRoute (url.resolve (host, routesMap.auth.facebook.login))
-			.callbackUrl (routesMap.auth.facebook.back)
-			.callbackRoute (url.resolve (host, routesMap.auth.facebook))
+			.loginRoute (url.resolve (host, facebookRoutes.login))
+			.callbackUrl (facebookRoutes.back)
+			.callbackRoute (url.resolve (host, facebookRoutes.back))
 
 			.authSuccessRedirect (routesMap.public_2)
 			.authFailureRedirect (routesMap.public_1)
