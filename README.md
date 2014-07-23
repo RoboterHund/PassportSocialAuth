@@ -2,16 +2,7 @@ Passport + MongoDB
 ==================
 &copy; 2014 RoboterHund
 
-Quick _passport_ integration module.
+I wrote this to try out the `passport` authentication module.
 
-Work In Progress
-================
-
-I'm still figuring out the best way to use
-_express_ & _passport_.
-
-I wrote _js-test_ first to see where _passport_ fits in.
-
-Now I'm trying to fill in the gaps in the module itself,
-which doesn't actually work (yet).
-
+The only missing part is the `private` folder, which is supposed to be private.
+But I pushed the `private_view` folder instead, which is the same thing, but with the parts I did not want to publish replaced with `THE_*(something)`.

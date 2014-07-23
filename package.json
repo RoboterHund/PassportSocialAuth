@@ -1,6 +1,8 @@
 {
+	"private": true,
+
 	"name": "passport-social-auth",
-	"version": "NOPE! :P",
+	"version": "0.0.1",
 	"license": "MIT",
 
 	"repository": {
@@ -9,12 +11,19 @@
 	},
 
 	"dependencies": {
-		"mongoskin": "~1.4.4",
-		"passport": "~0.2.0",
-		"passport-facebook": "~1.0.3",
-		"passport-twitter": "~1.0.2",
-		"passport-github": "~0.1.5",
-		"passport-google": "~0.3.0"
+		"april1": "0.3.1",
+		"april1-html": "0.0.1",
+		"connect-mongo": "0.4.1",
+		"cookie-parser": "1.1.0",
+		"debug": "0.8.1",
+		"express": "4.3.1",
+		"express-session": "1.2.1",
+		"passport": "0.2.0",
+		"passport-facebook": "1.0.3",
+		"passport-twitter": "1.0.2",
+		"passport-github": "0.1.5",
+		"passport-google": "0.3.0",
+		"serve-favicon": "2.0.1"
 	},
 
 	"engines": {
